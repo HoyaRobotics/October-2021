@@ -14,4 +14,10 @@ package frc.robot;
  * <p>It is advised to statically import this class (or one of its inner classes) wherever the
  * constants are needed, to reduce verbosity.
  */
-public final class Constants {}
+public final class Constants 
+{
+    //https://github.com/HoyaRobotics/InfiniteRecharge2020/blob/master/src/main/java/frc/robot/Constants.java
+    //Evin - add the driver controls
+    //Ethan - add the USB ids
+    //Sophia - CANbus ids - for drive motors
+}
