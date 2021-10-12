@@ -21,4 +21,21 @@ public final class Constants
     //Evin - add the driver controls
     //Ethan - add the USB ids
     //Sophia - CANbus ids - for drive motors
+
+
+// CANbus ids
+public static final int FRONT_LEFT_DRIVE = 0;
+public static final int FRONT_RIGHT_DRIVE = 1; 
+public static final int REAR_LEFT_DRIVE = 2; 
+public static final int REAR_RIGHT_DRIVE = 3;
+public static final int TURRET_ROTATOR = 4;
+public static final int INTAKE_INTERNAL_ROLLER_MASTER = 5;
+public static final int INTAKE_INTERNAL_ROLLER_SLAVE = 6;
+public static final int INTAKE_EXTERNAL_ROLLER = 7;
+public static final int SHOOTER_LEFT = 8;
+public static final int SHOOTER_RIGHT = 9; 
+public static final int CLIMBER_VERTICAL_1 = 10; 
+public static final int CLIMBER_VERTICAL_2 = 11; 
+public static final int CLIMBER_HORIZONTAL = 12; 
+
 }
