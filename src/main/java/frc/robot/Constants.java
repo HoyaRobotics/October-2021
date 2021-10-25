@@ -50,4 +50,6 @@ public static final int CLIMBER_VERTICAL_1 = 10;
 public static final int CLIMBER_VERTICAL_2 = 11; 
 public static final int CLIMBER_HORIZONTAL = 12; */
 
+public static final double CONTROL_DEADBAND = 0;
+
 }
