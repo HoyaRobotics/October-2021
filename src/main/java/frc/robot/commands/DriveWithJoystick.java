@@ -9,6 +9,8 @@ import java.util.function.DoubleSupplier;
 import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.Constants;
 import frc.robot.subsystems.DriveBase;
+import frc.robot.utils.Utils;
+
 
 public class DriveWithJoystick extends CommandBase {
   /** Creates a new DriveWithJoystick. */
@@ -16,7 +18,7 @@ public class DriveWithJoystick extends CommandBase {
   private final DriveBase driveBase;
   private final DoubleSupplier throttle;
   private final DoubleSupplier rotation;
-  public DriveWithJoystick(DriveBase driveBase, DoubleSupplier throttle, DoubleSupplier rotation); {
+  public DriveWithJoystick(DriveBase driveBase, DoubleSupplier throttle, DoubleSupplier rotation) {
     this.driveBase = driveBase;
     this.throttle = throttle;
     this.rotation = rotation;
@@ -24,17 +26,13 @@ public class DriveWithJoystick extends CommandBase {
     addRequirements(driveBase);
   }
 
-  // Called when the command is initially scheduled.
-  @Override
-  public void initialize() {}
-
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
     driveBase.arcadeDrive(
-      Utils.applyDeadband(throttle.getAsDouble(), Constants.CONTROL_DEADBAND),
-      Utils.applyDeadband(rotation.getAsDouble(), Constants.CONTROL_DEADBAND)
-    );
+      Utils.applyDeadband(throttle.getAsDouble()*-1, Constants.CONTROL_DEADBAND),
+      Utils.applyDeadband(rotation.getAsDouble()*-1, Constants.CONTROL_DEADBAND)
+        );
   }
 
   // Called once the command ends or is interrupted.
