@@ -16,7 +16,7 @@ public class DriveWithJoystick extends CommandBase {
   private final DriveBase driveBase;
   private final DoubleSupplier throttle;
   private final DoubleSupplier rotation;
-  public DriveWithJoystick(DriveBase driveBase, DoubleSupplier throttle, DoubleSupplier rotation); {
+  public DriveWithJoystick(DriveBase driveBase, DoubleSupplier throttle, DoubleSupplier rotation) {
     this.driveBase = driveBase;
     this.throttle = throttle;
     this.rotation = rotation;
