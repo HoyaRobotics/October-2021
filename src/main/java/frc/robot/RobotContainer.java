@@ -24,7 +24,8 @@ public class RobotContainer {
   private final XboxController driver = new XboxController(Constants.DRIVER);
   // The robot's subsystems and commands are defined here...
   private final DriveBase driveBase = new DriveBase();
-
+  
+  //Ethan, delete line 28 & 29.
   private final ExampleSubsystem m_exampleSubsystem = new ExampleSubsystem();
 
   private final ExampleCommand m_autoCommand = new ExampleCommand(m_exampleSubsystem);
